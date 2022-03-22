@@ -1,0 +1,32 @@
+<div class="m-3">
+  <h1 class="mt-5">Agenda impérial</h1>
+  <h4>Retrouvez les prochaines rencontres avec votre gouvernement:</h4>
+
+  <div *ngFor="let meeting of meetings">
+    <div class="card mb-3">
+      <div class="card-body">
+        <p>
+          Le {{ meeting.date | date: "dd/MM/yyyy" }} à
+          {{ meeting.date | date: "hh:mm " }}
+        </p>
+        <p>
+          Le {{ meeting.member.role }} rencontrera {{ meeting.firstname }}
+          {{ meeting.lastname }} pour s'entretenir sur le sujet de
+          {{ meeting.subject }}.
+        </p>
+
+        <p>Les points abordés :{{ meeting.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="w-100">
+    <button
+      type="button"
+      class="btn mb-3"
+      style="background-color: #e91bb5"
+      routerLink="/formulaire"
+    >
+      Prendre rendez-vous
+    </button>
+  </div>
+</div>

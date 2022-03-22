@@ -1,0 +1,11 @@
+p {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+.form-control {
+  border-radius: 0px;
+}

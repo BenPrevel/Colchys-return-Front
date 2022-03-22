@@ -1,0 +1,148 @@
+<form
+  class="mt-5"
+  [formGroup]="meetingForm"
+  (ngSubmit)="meetingForm.valid && onConfirm()"
+  #myMeetingForm="ngForm"
+>
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <label for="firstname">Prénom</label>
+    <input
+      [ngClass]="{
+        'is-invalid':
+          meetingForm.get('firstname')?.touched &&
+          meetingForm.get('firstname')?.errors
+      }"
+      type="text"
+      class="form-control"
+      name="firstname"
+      formControlName="firstname"
+      required
+    />
+    <div
+      *ngIf="
+        meetingForm.get('firstname')?.touched &&
+        meetingForm.get('firstname')?.errors
+      "
+    >
+      <small style="color: red"
+        >Un prénom avec 2 caractères minimum est requis.</small
+      >
+    </div>
+  </div>
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <label for="lastname">Nom</label>
+    <input
+      [ngClass]="{
+        'is-invalid':
+          meetingForm.get('lastname')?.touched &&
+          meetingForm.get('lastname')?.errors
+      }"
+      type="text"
+      class="form-control"
+      name="lastname"
+      formControlName="lastname"
+      required
+    />
+    <div
+      *ngIf="
+        meetingForm.get('lastname')?.touched &&
+        meetingForm.get('lastname')?.errors
+      "
+    >
+      <small style="color: red"
+        >Un nom avec un minimum de 2 caractères est requis.</small
+      >
+    </div>
+  </div>
+
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <mat-form-field class="selectBtn w-100" style="background-color: white">
+      <mat-label> Membre du gouvernement </mat-label>
+      <mat-select formControlName="memberId" [(ngModel)]="selectedgroup">
+        <mat-option *ngFor="let member of members" [value]="member.id">
+          {{ member.role }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <label for="date">Date</label>
+    <input
+      [ngClass]="{
+        'is-invalid':
+          meetingForm.get('date')?.touched && meetingForm.get('date')?.errors
+      }"
+      type="datetime-local"
+      class="form-control"
+      name="date"
+      formControlName="date"
+      required
+    />
+    <div
+      *ngIf="
+        meetingForm.get('date')?.touched && meetingForm.get('date')?.errors
+      "
+    >
+      <small style="color: red">Une date et un horaire sont nécessaire.</small>
+    </div>
+  </div>
+
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <label for="subject">Sujet</label>
+    <input
+      [ngClass]="{
+        'is-invalid':
+          meetingForm.get('subject')?.touched &&
+          meetingForm.get('subject')?.errors
+      }"
+      type="text"
+      class="form-control"
+      name="subject"
+      formControlName="subject"
+      required
+    />
+    <div
+      *ngIf="
+        meetingForm.get('subject')?.touched &&
+        meetingForm.get('subject')?.errors
+      "
+    >
+      <small style="color: red">Un sujet est requis.</small>
+    </div>
+  </div>
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <label for="description">Description</label>
+    <input
+      [ngClass]="{
+        'is-invalid':
+          meetingForm.get('description')?.touched &&
+          meetingForm.get('description')?.errors
+      }"
+      type="text"
+      class="form-control"
+      name="description"
+      formControlName="description"
+      required
+    />
+    <div
+      *ngIf="
+        meetingForm.get('description')?.touched &&
+        meetingForm.get('description')?.errors
+      "
+    >
+      <small style="color: red">Une description est requise.</small>
+    </div>
+  </div>
+
+  <div class="footer d-flex justify-content-center">
+    <button
+      class="btn mb-3"
+      style="background-color: #e91bb5"
+      [disabled]="!meetingForm.valid"
+      (click)="onConfirm()"
+    >
+      Envoyer
+    </button>
+  </div>
+</form>
