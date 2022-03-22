@@ -2,8 +2,6 @@
 <div id="top"></div>
 
 
-<br />
-
 <h3 align="center">Colchys' return</h3>
 
   <p align="center">
