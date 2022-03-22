@@ -11,15 +11,12 @@
 <h3 align="center">Colchys' return</h3>
 
   <p align="center">
-   
     <br />
     <a href="https://github.com/BenPrevel/Colchys-return-Front"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/BenPrevel/Colchys-return-Front">View Demo</a>
-    ·
     <a href="https://github.com/BenPrevel/Colchys-return-Front/issues">Report Bug</a>
- 
   </p>
 </div>
 
