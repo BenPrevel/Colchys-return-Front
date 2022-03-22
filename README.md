@@ -7,7 +7,7 @@
 <h3 align="center">Colchys' return</h3>
 
   <p align="center">
-    project_description
+   
     <br />
     <a href="https://github.com/BenPrevel/Colchys-return-Front"><strong>Explore the docs »</strong></a>
     <br />
@@ -47,7 +47,7 @@
 
 ## About The Project
 
-<img src="src/assets/img/nightciry.jpg" alt="screenshot" >
+<img src="src/assets/img/nightcity.jpg" alt="screenshot" >
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
