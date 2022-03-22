@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Play&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: #1d093f !important;
+}
+
+h1 {
+  font-family: "Electrolize", sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Play", sans-serif;
+}
+
+p {
+  font-family: "Play", sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,22 @@
+.titleGroup {
+  background: url("/assets/img/nightcity.jpg") no-repeat center;
+  background-size: cover;
+  min-height: calc(50vh - 56px);
+  position: relative;
+  margin: 0;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  bottom: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+a {
+  color: #1d093f;
+  font-family: "Play", sans-serif;
+}
