@@ -4,12 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/WildCodeSchool/P3-jaffrebook-front-javangular-2021">
-    <img src="src/assets/img/logoJaffre2.webp" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">Colchys' return</h3>
-
   <p align="center">
     <br />
     <a href="https://github.com/BenPrevel/Colchys-return-Front"><strong>Explore the docs »</strong></a>
