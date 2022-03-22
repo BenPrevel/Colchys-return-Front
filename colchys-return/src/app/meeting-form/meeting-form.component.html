@@ -55,31 +55,39 @@
     </div>
   </div>
 
-  <!-- <div class="col-md-5 mb-3 col-9 mx-auto">
-    <mat-form-field appearance="fill">
-      <mat-label for="date">Date</mat-label>
-      <input
-        matInput
-        [matDatepicker]="picker"
-        [max]="maxDate"
-        [ngClass]="{
-          'is-invalid':
-            meetingForm.get('date')?.touched && meetingForm.get('date')?.errors
-        }"
-        name="date"
-        formControlName="date"
-      />
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker color="warn"></mat-datepicker>
-      <div
-        *ngIf="
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <mat-form-field class="selectBtn w-100" style="background-color: white">
+      <mat-label> Membre du gouvernement </mat-label>
+      <mat-select formControlName="memberId" [(ngModel)]="selectedgroup">
+        <mat-option *ngFor="let member of members" [value]="member.id">
+          {{ member.role }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-5 mb-3 col-9 mx-auto">
+    <label for="date">Date</label>
+    <input
+      [ngClass]="{
+        'is-invalid':
           meetingForm.get('date')?.touched && meetingForm.get('date')?.errors
-        "
-      >
-        <small style="color: red">Une date valide est requise.</small>
-      </div>
-    </mat-form-field> -->
-  <!-- </div> -->
+      }"
+      type="datetime-local"
+      class="form-control"
+      name="date"
+      formControlName="date"
+      required
+    />
+    <div
+      *ngIf="
+        meetingForm.get('date')?.touched && meetingForm.get('date')?.errors
+      "
+    >
+      <small style="color: red">Une date et un horaire sont nécessaire.</small>
+    </div>
+  </div>
+
   <div class="col-md-5 mb-3 col-9 mx-auto">
     <label for="subject">Sujet</label>
     <input
@@ -129,7 +137,7 @@
 
   <div class="footer d-flex justify-content-center">
     <button
-      class="btn"
+      class="btn mb-3"
       style="background-color: #e91bb5"
       [disabled]="!meetingForm.valid"
       (click)="onConfirm()"

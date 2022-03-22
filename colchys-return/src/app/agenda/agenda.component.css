@@ -4,5 +4,9 @@ h4 {
 }
 
 p {
-  color: white;
+  color: #1d093f;
+}
+
+.btn {
+  justify-content: center;
 }

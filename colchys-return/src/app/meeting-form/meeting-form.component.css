@@ -5,3 +5,7 @@ p {
 label {
   color: white;
 }
+
+.form-control {
+  border-radius: 0px;
+}
