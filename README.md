@@ -43,7 +43,7 @@
 
 ## About The Project
 
-<img src="src/assets/img/nightcity.jpg" alt="screenshot" >
+<img src="colchys-return/src/assets/img/nightcity.jpg" alt="screenshot" >
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -105,5 +105,5 @@ Benjamin PREVEL - [LinkedIn](https://www.linkedin.com/in/benjaminprevel/) - [Git
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[product-screenshot]: src/assets/img/nightcity.jpg
+[product-screenshot]: colchys-return/src/assets/img/nightcity.jpg
 
