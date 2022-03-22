@@ -1,6 +1,12 @@
 # Colchys-return-Front
 <div id="top"></div>
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/WildCodeSchool/P3-jaffrebook-front-javangular-2021">
+    <img src="src/assets/img/logoJaffre2.webp" alt="Logo" width="80" height="80">
+  </a>
 
 <h3 align="center">Colchys' return</h3>
 
@@ -106,4 +112,6 @@ Benjamin PREVEL - [LinkedIn](https://www.linkedin.com/in/benjaminprevel/) - [Git
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+[product-screenshot]: src/assets/img/nightcity.jpg
 
