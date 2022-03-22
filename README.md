@@ -91,6 +91,8 @@ To get a local copy up and running follow these steps.
 
 Colchys' return is a checkpoint made at the Wild Code School on March 2022.
 
+To use the project, you just have to fill up the form on "Prendre rendez-vous" page.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
