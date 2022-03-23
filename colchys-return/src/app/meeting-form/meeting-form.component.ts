@@ -34,14 +34,12 @@ export class MeetingFormComponent implements OnInit {
   onConfirm() {
     this.selectedgroup.toString();
     this.meetingService.createMeeting(this.meetingForm.value).subscribe();
-    console.log(this.meetingForm.value);
   }
 
   ngOnInit(): void {
     this.memberService.getAllMembers().subscribe((members: Member[]) => {
       members.forEach((member: Member) => {
         this.members.push(member);
-        console.log(this.members);
       });
     });
   }
