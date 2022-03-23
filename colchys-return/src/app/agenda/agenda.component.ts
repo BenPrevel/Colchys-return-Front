@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Meeting } from '../shared/models/meeting.model';
-import { Member } from '../shared/models/member.model';
 import { MeetingService } from '../shared/services/meeting.service';
 
 @Component({
